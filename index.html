@@ -22,7 +22,7 @@
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="assets/img/icon.png"/>
-  
+
   <!-- TITLE -->
   <title>
     Poo Clicker
@@ -46,25 +46,25 @@
       <div class="row">
 
         <!-- LEFT WINDOW" -->
-        <div class="col-3">
-            <p>EMPTY COL</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
+        <div class="col-3 box">
+            <p class="title">EMPTY COL</p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
         </div>
 
         <!-- CENTER WINDOW -->
-        <div class="col-6">
+        <div class="col-6 box">
 
           <!-- Game-Name section -->
-          <div class="container-fluid">
-            <div class="row rowPadding d-flex justify-content-center">
-              <p>Poo Clicker</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
+          <!-- Jumbotron -->
+			    <div class="jumbotron text-center">
+            <div class="text">
+              <h3>! Poo Clicker !</h3>
             </div>
           </div>
 
           <!-- Image-button -->
           <div class="container-fluid">
-            <div class="row rowPadding">
+            <div class="row">
               <div class="action">
                 <a href="#" id="run" class="btn">Cookie</a>
               </div>
@@ -73,10 +73,12 @@
 
           <!-- Scoring -->
           <div class="container-fluid">
-            <div class="row rowPadding d-flex justify-content-center">
-              <p>SCORING VALUE</p>
-              <div id="target">
+            <div class="row d-flex justify-content-center">
+              <div class="scoring">
+                SCORE:
+                  <div id="target">
                   
+                  </div>
               </div>
             </div>
           </div>
@@ -84,13 +86,38 @@
         </div>
 
         <!-- RIGHT WINDOW -->
-          <div class="col-3">
-            <p>STORE/BONUS</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic dicta quasi mollitia at libero cumque iusto assumenda, nisi eius exercitationem culpa ad alias quibusdam sed fugit voluptatem! Modi, ipsam?</p>
+          <div class="col-3 box">
+            <div class="container-fluid">
+
+              <!-- Store Title -->
+              <div class="row">
+                <p class="title">STORE/BONUS</p>
+              </div>
+
+              <!-- Store Menu -->
+              <div class="row">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic dicta quasi mollitia at libero cumque iusto assumenda, nisi eius exercitationem culpa ad alias quibusdam sed fugit voluptatem! Modi, ipsam?</p>
+
+                <!-- n°1 Bonus Button -->
+                <div class="action">
+                  <a href="#" id="autoClick" class="btn">Auto-Click</a>
+                </div>
+
+                <!-- n°2 Bonus Button -->
+                <div class="action">
+                  <a href="#" id="multiply" class="btn">Mutliply</a>
+                </div>
+
+                <!-- n°3 Bonus Button -->
+                <div class="action">
+                  <a href="#" id="run" class="btn">Cookie</a>
+                </div>
+
+              </div>
+            </div>
           </div>
-
-
-      </div>
+          
+      </div>    
     </div>
   </section>
 
