@@ -1,6 +1,15 @@
 # Cookie Clicker:
 <p align="center"> - [TEAM-PROJECT] - </p>
 
+<p align="center">
+<ul>
+  <li>Arturo</li>
+  <li>Jeason</li>
+  <li>Kiza</li>
+  <li>Mathieu</li>
+</ul>
+</p>
+
 <hr>
 
 <h2>Goals:</h2> 
