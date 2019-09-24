@@ -5,8 +5,20 @@
 .rowPadding {
     padding: 2rem;
 }
+
+.title {
+    margin: 2rem;
+    text-align: center;
+}
+
+.text {
+    font-family: cursive;
+    margin: 2rem;
+}
+
 // MAIN BUTTON
 .btn {
+    margin: 2rem;
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
