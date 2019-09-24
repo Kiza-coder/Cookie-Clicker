@@ -46,19 +46,19 @@
       <div class="row">
 
         <!-- LEFT WINDOW" -->
-        <div class="col-3">
+        <div class="col-3 box">
             <p class="title">EMPTY COL</p>
             <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
         </div>
 
         <!-- CENTER WINDOW -->
-        <div class="col-6">
+        <div class="col-6 box">
 
           <!-- Game-Name section -->
-          <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
-              <p class="title">Poo Clicker</p>
-              <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
+          <!-- Jumbotron -->
+			    <div class="jumbotron text-center">
+            <div class="text">
+              <h3>! Poo Clicker !</h3>
             </div>
           </div>
 
@@ -66,7 +66,9 @@
           <div class="container-fluid">
             <div class="row">
               <div class="action">
-                <a href="#" id="run" class="btn">Cookie</a>
+                <button type=submit name=action id="run">
+                    <img src="assets/img/shittyH.png" id="pooImage" alt="Happy poo">
+                </button>
               </div>
             </div>
           </div>
@@ -74,9 +76,11 @@
           <!-- Scoring -->
           <div class="container-fluid">
             <div class="row d-flex justify-content-center">
-              <p class="title">SCORING VALUE</p>
-              <div id="target">
+              <div class="scoring">
+                SCORE:
+                  <div id="target">
                   
+                  </div>
               </div>
             </div>
           </div>
@@ -84,13 +88,38 @@
         </div>
 
         <!-- RIGHT WINDOW -->
-          <div class="col-3">
-            <p class="title">STORE/BONUS</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic dicta quasi mollitia at libero cumque iusto assumenda, nisi eius exercitationem culpa ad alias quibusdam sed fugit voluptatem! Modi, ipsam?</p>
+          <div class="col-3 box">
+            <div class="container-fluid">
+
+              <!-- Store Title -->
+              <div class="row">
+                <p class="title">STORE/BONUS</p>
+              </div>
+
+              <!-- Store Menu -->
+              <div class="row">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic dicta quasi mollitia at libero cumque iusto assumenda, nisi eius exercitationem culpa ad alias quibusdam sed fugit voluptatem! Modi, ipsam?</p>
+
+                <!-- n°1 Bonus Button -->
+                <div class="action">
+                  <a href="#" id="autoClick" class="btn">Auto-Click</a>
+                </div>
+
+                <!-- n°2 Bonus Button -->
+                <div class="action">
+                  <a href="#" id="multiply" class="btn">Mutliply</a>
+                </div>
+
+                <!-- n°3 Bonus Button -->
+                <div class="action">
+                  <a href="#" id="button3" class="btn">Button 3</a>
+                </div>
+
+              </div>
+            </div>
           </div>
-
-
-      </div>
+          
+      </div>    
     </div>
   </section>
 
