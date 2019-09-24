@@ -1,14 +1,14 @@
 # Cookie Clicker:
 <p align="center"> - [TEAM-PROJECT] - </p>
 
-<p align="center">
-<ul><p align="center">
+<h3>Contributors:</h3>
+<ul>
   <li>Arturo</li>
   <li>Jeason</li>
   <li>Kiza</li>
   <li>Mathieu</li>
-</ul></p>
-</p>
+</ul>
+
 
 <hr>
 
