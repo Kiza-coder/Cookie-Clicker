@@ -27,6 +27,13 @@
 
 <h2>Methodology:</h2>
 <p></p>
+<ul>
+  <li>Front-End: </li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
 <hr>
 
