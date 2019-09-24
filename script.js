@@ -51,7 +51,7 @@ document.getElementById("run-2").addEventListener("click",() =>{
 
 
 document.getElementById("run").addEventListener("click",() =>{
-	autoClick();
+	incrementOne()
 	});
 
 
