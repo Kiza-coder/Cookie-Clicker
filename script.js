@@ -57,11 +57,19 @@ function main()
 main()
  
 
+const gallery=[
+	"assets/img/shittyH.png",
+	"assets/img/shittyA.png",
 
+]
 
 
 document.getElementById("run").addEventListener("click",() =>{
 	incrementOne()
+		let i = 0;
+			i++;
+			document.querySelector("img").setAttribute("src", gallery[i%gallery.length]);
+
 	});
 
 document.getElementById("mult").addEventListener("click",() =>{
