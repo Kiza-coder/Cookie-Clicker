@@ -13,7 +13,7 @@
 <hr>
 
 <h2>Goals:</h2> 
-<p>Create a cookie clicker using Html, Css and Javascript. Team: Arturo, Jeason, Kiza, Mathieu.</p>
+<p>Create a cookie clicker using Html, Css and Javascript.</p>
 
 <ol>
   <li></li>
