@@ -2,12 +2,12 @@
 <p align="center"> - [TEAM-PROJECT] - </p>
 
 <p align="center">
-<ul>
+<ul><p align="center">
   <li>Arturo</li>
   <li>Jeason</li>
   <li>Kiza</li>
   <li>Mathieu</li>
-</ul>
+</ul></p>
 </p>
 
 <hr>
