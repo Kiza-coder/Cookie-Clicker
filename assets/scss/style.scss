@@ -15,7 +15,7 @@ body {
 }
 
 .text {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 2rem;
 }
 
@@ -37,7 +37,7 @@ body {
 // Row n°1:
 .leftTitleRow {
     background-image: url("../img/titleBg.png");
-    border: 3px solid #ffffff;
+    border: 3px solid #883412;
     width: 110%;
     height: 100px;
     margin-top: 1rem;
@@ -75,24 +75,25 @@ body {
     margin-top: 4rem;
 }
 
-.btnRun {
-    margin: 2rem;
+.btnPoo {
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
-    width: 240px;
-    height: 60px;
-    border-radius: 80px;
-    line-height: 60px;
     text-align: center;
-    border: 3px solid #009688;
-    display: block;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
     text-decoration: none;
-    color: #009688;
+    color: #000000;
+    background-color: transparent;
     position: relative;
-    /*overflow: hidden;*/
-    background: transparent;
-    transition: .3s;
+    height: 120px;
+    width: 20px;
     :before {
         content: '';
         width: 100%;
@@ -122,15 +123,18 @@ body {
         top: 0;
     }
     :hover:after {
-        top: 0;
+        top:0;
     }
 }
 // Row n°3: Scoring div
 .scoring {
     padding: 2rem;
     margin: 2rem 2rem 2rem 2rem;
-    border: 3px whitesmoke solid;
-    background-color: black;
+    border: 8px rgb(139, 0, 0) solid;
+    border-radius: 20%;
+    background-image: url("../img/scoreBg.png");
+    color: white;
+    font-weight: bolder; 
     width: 13rem;
     text-align: center;
 }
@@ -139,7 +143,7 @@ body {
 // Row n°1:
 .rightTitleRow {
     background-image: url("../img/titleBg.png");
-    border: 3px solid #ffffff;
+    border: 3px solid #883412;
     width: 110%;
     height: 100px;
     margin-top: 1rem;
@@ -148,6 +152,11 @@ body {
 }
 
 //Row n°2:
+.list-group-item {
+    background-image: url("../img/titleBg.png");
+    border: whitesmoke solid 3px;
+}
+
 .boostMenu {
     font-family: arial;
     text-transform: uppercase;
@@ -166,57 +175,36 @@ body {
     transition: .3s;
 }
 
-.btn {
+.BoostsBtn {
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
-    border: 3px solid #ffffff;
-    border-radius: 100%;
+    border: 3px solid #000000;
+    border-radius: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 3rem;
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-decoration: none;
-    color: #000000;
-    background-color: transparent;
+    font-weight: bolder;
+    color: #ffffff;
+    background-image: url("../img/boostsBtnBg.png");
     position: relative;
-    height: 120px;
-    width: 20px;
-    /*overflow: hidden;*/
-    transition: .3s;
-    :before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background: #009688;
-        opacity: .5;
-        top: 100;
-        left: 0;
-        z-index: -1;
-        transition: .3s;
-    }
-    :after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        background: #009688;
-        top: 100;
-        left: 0;
-        z-index: -1;
-        transition: .3s;
-        transition-delay: .2s;
-    }
+    padding: 0.5rem;
     :hover {
-        color: #fff;
+        text-decoration: none;
     }
-    :hover:before {
-        top: 0;
-    }
-    :hover:after {
-        top: 0;
-    }
+}
+
+.dropdown-menu {
+    padding: 0.5rem;
+    background-image: url("../img/boostsMenuBg.png");
+}
+
+.dropdown-header {
+    background-image: url("../img/titleBg.png");
 }
