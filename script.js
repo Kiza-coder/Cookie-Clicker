@@ -75,6 +75,16 @@ function check()
 	,100)
 
 }
+function bonus()
+{
+	let valActuel = parseInt(myStock.getItem("valClick"))
+	let valBonus = valActuel * 2;
+
+	parseInt(myStock.setItem("valClick", valBonus);
+	setTimeout(function(){},5000);
+	parseInt(myStock.setItem("valClick",valActuel );
+	
+}
 
 
 
@@ -124,6 +134,11 @@ document.getElementById("multiply").addEventListener("click",() =>{
 document.getElementById("autoClick").addEventListener("click",() =>{
 	autoClick();
 	});
+
+document.getElementById("Bonus").addEventListener("click",() =>{
+	bonus();
+	});
+
 
 
 
