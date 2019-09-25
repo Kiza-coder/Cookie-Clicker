@@ -63,12 +63,12 @@ const gallery=[
 
 ]
 
-
+let i = 0;
 document.getElementById("run").addEventListener("click",() =>{
 	incrementOne()
-		//let i = 0;
-		//	i++;
-		//	document.querySelector("img").setAttribute("src", gallery[i%gallery.length]);
+		
+			i++;
+			document.querySelector("img").setAttribute("src", gallery[i%gallery.length]);
 
 	});
 
