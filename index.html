@@ -19,13 +19,19 @@
   
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+  <!-- FONTS COLLECTION -->
+  <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
 
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="assets/img/icon.png"/>
+  <link rel="icon" type="image/png" href="assets/img/poo.png"/>
 
   <!-- TITLE -->
   <title>
     Poo Clicker
+      <div id="target">
+                  
+      </div>
   </title>
 
 </head>
@@ -43,10 +49,10 @@
   <!-- MAIN -->
   <section>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row rowMain">
 
         <!-- LEFT WINDOW" -->
-        <div class="col-3 box">
+        <div class="col-3 box poo">
           <div class="container-fluid">
 
             <div class="row leftTitleRow">
@@ -54,40 +60,54 @@
             </div>
             
             <div class="row">
-              <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
+              <p class="text">
+                Poo clicker is an amazing game about a little poo.
+              </p><br>
+              <p class="text">
+                We all made poo everyday, but does we take time to truely interact with it?
+              </p><br>
+              <p class="text">
+                Poo clicker is the game, Poo Clicker is YOUR GAME !
+              </p>
             </div>
           </div>
         </div>
 
         <!-- CENTER WINDOW -->
-        <div class="col-6 box">
+        <div class="col-6 box grass">
 
           <!-- Game-Name section -->
           <!-- Jumbotron -->
 			    <div class="jumbotron text-center">
             <div class="jumbotronText">
-              <h3>! Poo Clicker !</h3>
+              ! Poo Clicker !
             </div>
           </div>
 
           <!-- Image-button -->
           <div class="container-fluid">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
               <div class="action">
-                <button type="button" class="btn" id="run" name="action">
+                <a type="button" class="btnPoo" id="run" name="action">
                   <img class="imagePoo" src="assets/img/shittyH.png"/>
-                </button>
+                </a>
               </div>
             </div>
           </div>
+
+          
 
           <!-- Scoring -->
           <div class="container-fluid">
             <div class="row d-flex justify-content-center">
               <div class="scoring">
-                SCORE:
+                YOUR SCORE!
                   <div id="target">
-                  
+                      
+                      \ (•◡•) /
+                  </div>
+                  <div id="perSecond">
+
                   </div>
               </div>
             </div>
@@ -96,7 +116,7 @@
         </div>
 
         <!-- RIGHT WINDOW -->
-          <div class="col-3 box">
+          <div class="col-3 box poo">
             <div class="container-fluid">
 
               <!-- Store Title -->
@@ -105,55 +125,84 @@
               </div>
 
               <!-- Store Menu -->
-              <div class="row">
-                  <h4>List of avaible boosts:</h4>
-                  <ul class="list-group d-flex justify-content-center">
+              <div class="row d-flex justify-content-center">
+                  <p class="text">List of avaible boosts:</p>
+
+                  <ul class="list-group">
+
+                      
                       <li class="list-group-item">
+                        <!-- Speed Boosts-->
                           <div class="dropdown">
                               <button class="boostMenu btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              Speed Boosts:
+                                🔥 Boosts 
                               <span class="caret"></span>
                               </button>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li class="dropdown-header">List of Speed Boosts;</li>
+                              <li class="dropdown-header">Hurry up!!!</li>
+
+                                <!-- Auto-Click Button -->
                                 <li>
-                                  <div class="action">
-                                    <a href="#" id="autoClick" class="btn">Auto-Click</a>
+                                  <div class="action BoostsBtn">
+                                    <a href="#" id="autoClick" class="">Auto-Click</a>
                                   </div>
                                 </li>
-                                <li><a href="#" title="Lien 2">Lien 2</a></li>
-                                <li><a href="#" title="Lien 3">Lien 3</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#" title="Lien 4">Lien 4</a></li>
-                                </ul>
+
+                                <!-- Multiply Button -->
+                                <li>
+                                  <div class="action BoostsBtn">
+                                    <a href="#" id="multiply" class="">Multiply</a>
+                                  </div>
+                                </li>
+
+                                <!--  Bonus Button -->
+                                <li>
+                                  <div class="action BoostsBtn">
+                                    <a href="#" id="bonus" class="">Bonus</a>
+                                  </div>
+                                </li>
+
+
+                              </ul>
                           </div> 
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <h6>Auto-Click</h6>
-                            <span class="badge badge-primary badge-pill">10 €</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <h6>Other</h6>
-                              <span class="badge badge-primary badge-pill">12 €</span>
+
+                          <!-- REINFORCMENT -->
+                          <div class="dropdown">
+                            <button class="boostMenu btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              🚻 REINFORCMENT 
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li class="dropdown-header">Hurry up!!!</li>
+
+                              <!-- Cow Button -->
+                              <li>
+                                <div class="action BoostsBtn">
+                                  <a href="#" id="cow" class="">🐄 Cow</a>
+                                </div>
+                              </li>
+
+                              <!-- Button -->
+                              <li>
+                                <div class="action BoostsBtn">
+                                  <a href="#" id="multiply" class=""></a>
+                                </div>
+                              </li>
+
+                              <!-- Button -->
+                              <li>
+                                <div class="action BoostsBtn">
+                                  <a href="#" id="bonus" class=""></a>
+                                </div>
+                              </li>
+
+
+                            </ul>
+                        </div> 
+
                       </li>
                   </ul>
-
-                <!-- n°1 Bonus Button -->
-                <div class="action">
-                  <a href="#" id="autoClick" class="btn">Auto-Click</a>
                 </div>
-
-                <!-- n°2 Bonus Button -->
-                <div class="action">
-                  <a href="#" id="multiply" class="btn">Mutliply</a>
-                </div>
-
-                <!-- n°3 Bonus Button -->
-                <div class="action">
-                  <a href="#" id="button3" class="btn">Button 3</a>
-                </div>
-
-              </div>
             </div>
           </div>
           

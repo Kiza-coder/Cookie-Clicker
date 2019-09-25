@@ -1,18 +1,27 @@
 // # BODY CONTENT #
 body {
-    background-image: url("../img/background3.png");
+    background-image: url("../img/background2.png");
 }
 
 // # FONT MANAGING #
 .title {
-    margin: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-size: 25pt;
 }
 
 .text {
-    font-family: cursive;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #000000;
+    border-radius: 10%;
     margin: 2rem;
+    padding: 1rem;
+    border: 8px whitesmoke solid;
 }
 
 // # BOXES #
@@ -22,24 +31,47 @@ body {
     color: whitesmoke; 
 }
 
+// # ROWS #
+.rowMain {
+    margin-top: 1rem;
+}
+
 // ===========================================================//
 
 // # LEFT WINDOW #
 // Row n°1:
 .leftTitleRow {
-    background-image: url("../img/");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #000000;
+    background-image: url("../img/titleBg.png");
+    border: 3px solid #883412;
+    border-radius: 5%;
     width: 110%;
     height: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 // # CENTER WINDOWS #
+
+.grass {
+    background-image: url(../img/grass.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.poo {
+    background-image: url(../img/poo.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 6rem;
+}
+
 // Row n°1: Jumbotron
 .jumbotron {
-    background-image: url("../img/jumbotron.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/jumbotron.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,18 +79,18 @@ body {
     width: 100%;
     border: 3px solid #000000;
     .jumbotronText {
-        background-color: rgba(0, 0, 0, 0.753);
-        border: 3px solid #883600;
-        border-radius: 10% / 90%;
-        color: whitesmoke;
-        font-size: 12pt;
+        font-family: 'Barriecito', cursive;
+        color: rgb(0, 0, 0);
+        font-size: 60pt;
+        padding: 1rem;
+        font-weight: bolder;
     }
 }
 
 // Row n°2: Poo Image
 .imagePoo {
     background: transparent;
-    height: 220px;
+    height: 300px;
     width: 240px;
     display: block;
     margin-left: auto;
@@ -66,24 +98,27 @@ body {
     margin-top: 4rem;
 }
 
-.btnRun {
-    margin: 2rem;
+.btnPoo {
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
-    width: 240px;
-    height: 60px;
-    border-radius: 80px;
-    line-height: 60px;
     text-align: center;
-    border: 3px solid #009688;
-    display: block;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
     text-decoration: none;
-    color: #009688;
+    color: #000000;
+    background-color: transparent;
     position: relative;
-    /*overflow: hidden;*/
-    background: transparent;
-    transition: .3s;
+    height: 120px;
+    width: 20px;
+    transform: scale(1);
+    transition: transform 200ms;
     :before {
         content: '';
         width: 100%;
@@ -108,35 +143,47 @@ body {
     }
     :hover {
         color: #fff;
+        transform: scale(1.15);
     }
     :hover:before {
         top: 0;
     }
     :hover:after {
-        top: 0;
+        top:0;
     }
 }
 // Row n°3: Scoring div
 .scoring {
     padding: 2rem;
     margin: 2rem 2rem 2rem 2rem;
-    border: 3px whitesmoke solid;
-    background-color: black;
+    border: 8px rgb(139, 0, 0) solid;
+    border-radius: 20%;
+    background-image: url("../img/scoreBg.png");
+    color: white;
+    font-weight: bolder; 
+    width: 13rem;
+    text-align: center;
 }
 
 // # RIGHT WINDOW #
 // Row n°1:
 .rightTitleRow {
-    background-image: url("../img/");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #000000;
+    background-image: url("../img/titleBg.png");
+    border: 3px solid #883412;
+    border-radius: 5%;
     width: 110%;
-    height: 110px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 //Row n°2:
+.list-group-item {
+    background-image: url("../img/titleBg.png");
+    border: whitesmoke solid 3px;
+}
+
 .boostMenu {
     font-family: arial;
     text-transform: uppercase;
@@ -149,28 +196,34 @@ body {
     display: block;
     text-decoration: none;
     color: #000000;
-    background-color: grey;
+    background-color: rgb(122, 59, 0);
     position: relative;
     /*overflow: hidden;*/
     transition: .3s;
 }
 
-.btn {
+.BoostsBtn {
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
     text-align: center;
-    border: 3px solid #ffffff;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     text-decoration: none;
+    font-weight: bolder;
     color: #000000;
-    background-color: grey;
+    background-image: url("../img/pipe.png");
+    background-size: cover;
+    background-position: center;
     position: relative;
-    /*overflow: hidden;*/
-    transition: .3s;
+    padding: 0.5rem;
+    transform: scale(1);
+    transition: transform 200ms;
+    height: 130px;
+    width: 300px;
     :before {
         content: '';
         width: 100%;
@@ -195,11 +248,30 @@ body {
     }
     :hover {
         color: #fff;
+        transform: scale(1.15);
+        text-decoration: none;
     }
     :hover:before {
         top: 0;
+        text-decoration: none;
     }
     :hover:after {
-        top: 0;
+        top:0;
+        text-decoration: none;
     }
+}
+
+.dropdown-menu {
+    padding: 0.5rem;
+    background-image: url("../img/toilet.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 2rem;
+    border: solid 3px black;
+    border-radius: 5%;
+}
+
+.dropdown-header {
+    background-image: url("../img/titleBg.png");
+    text-align: center;
 }

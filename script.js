@@ -1,34 +1,42 @@
 // Local  storage array with global variabl (key,value)
-let myStock = localStorage;
+let myStock = sessionStorage;
+let tabIdButtonAchat= new Array();
+tabIdButtonAchat= ["autoClick","multiply"]
+
 myStock.setItem("score",0);
 myStock.setItem("valClick",1);
+myStock.setItem("0",20);// autoClick
+myStock.setItem("1",300);// Multi
 
-
-
+//Function who change the title
+function changeTitle()
+{
+	document.getElementsByTagName("title")[0].innerHTML= myStock.getItem("score")+"   shit"
+}
 //function who increment  the score of one
 function incrementOne(){
 		let score = parseInt(myStock.getItem("score"))
 		let valClick = parseInt(myStock.getItem("valClick"));
 		score = score + valClick;
-		console.log(score)	
+		
 		target.innerHTML = score;
 		myStock.setItem("score",score);
 
 }
-
+changeTitle();
 
 //function who multiplcate the score
 function multiplication()
 	{
 		myStock.setItem("valClick",myStock.getItem("valClick")*2);
-		buy(10);
+		buy(myStock.getItem("1"))
 	}
 
 
 //function who automatically increment the score of "num" every 1000 ms
 function autoClick()
 	{
-		buy(10)
+		buy(myStock.getItem("0"))
 		setInterval(function(){
 			let score = parseInt(myStock.getItem("score"));
 			let valClick = parseInt(myStock.getItem("valClick"));
@@ -47,15 +55,71 @@ function buy(num)
 	}
 
 
-//function main()
-//	{
-//		setInterval(function(){
-//			document.getElementById("mult").disable = true;
-//			console.log(1151);
-//		},1000);
-//	}	
+function check()
+{
+	setInterval(function(){
+		for(let i=0 ; i< tabIdButtonAchat.length ;i++)
+		{
+			if(parseInt(myStock.getItem(i)) > parseInt(myStock.getItem("score")))
+			{
+				document.getElementById(tabIdButtonAchat[i]).setAttribute("class","btn btn-link disabled")
+			}
+			else
+			{
+				document.getElementById(tabIdButtonAchat[i]).setAttribute("class","btn")
+			}
+		
+		}
+		changeTitle();
+	}
+	,100)
 
- 
+}
+//function bonus()
+//{
+//	
+//	let bonus = parseInt(myStock.getItem("valClick"));
+//	bonus = bonus * 2
+//	target.innerHTML = parseInt(myStock.getItem("score")) + bonus
+//	setTimeout(function(){},10000);
+//	myStock.setItem("valClick",myStock.getItem("valClick") / 2);
+//	console.log(myStock.getItem("valClick"))
+	
+//}
+
+
+
+
+
+function shittyBySecond()
+{
+	let score = parseInt(myStock.getItem("score"))
+	setInterval(function(){
+		 let res = parseInt(myStock.getItem("score")) - score;
+		 score = parseInt(myStock.getItem("score"));
+		 if(res>0){
+		 	 console.log(res)
+		 }
+	},1000);
+}
+
+//function cow(){
+//	setInterval(function(){
+
+//			let cow = parseInt(myStock.getItem("valClick"));
+//			cow = cow * 5
+//			cow = cow + parseInt(myStock.getItem("score"));
+//			target.innerHTML = cow;
+
+	
+//	},1);
+//}
+
+
+check();
+shittyBySecond();
+
+
 
 const gallery=[
 	"assets/img/shittyH.png",
@@ -79,6 +143,17 @@ document.getElementById("multiply").addEventListener("click",() =>{
 document.getElementById("autoClick").addEventListener("click",() =>{
 	autoClick();
 	});
+
+document.getElementById("bonus").addEventListener("click",() =>{
+	bonus();
+	});
+
+//document.getElementById("cow").addEventListener("click",() =>{
+//	cow();
+//	});
+
+
+
 
 
 
