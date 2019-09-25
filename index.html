@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="cookie.js">
+
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="assets/img/icon.png"/>
@@ -47,8 +47,16 @@
 
         <!-- LEFT WINDOW" -->
         <div class="col-3 box">
-            <p class="title">EMPTY COL</p>
-            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
+          <div class="container-fluid">
+
+            <div class="row leftTitleRow">
+              <p class="title">About us:</p>
+            </div>
+            
+            <div class="row">
+              <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores exercitationem eligendi aliquam consequuntur sunt tempore expedita praesentium debitis dolorem suscipit iure sequi nobis quas quaerat magnam, ipsa excepturi, sed nam.</p>
+            </div>
+          </div>
         </div>
 
         <!-- CENTER WINDOW -->
@@ -57,7 +65,7 @@
           <!-- Game-Name section -->
           <!-- Jumbotron -->
 			    <div class="jumbotron text-center">
-            <div class="text">
+            <div class="jumbotronText">
               <h3>! Poo Clicker !</h3>
             </div>
           </div>
@@ -66,8 +74,8 @@
           <div class="container-fluid">
             <div class="row">
               <div class="action">
-                <button type=submit name=action id="run">
-                    <img src="assets/img/shittyH.png" id="pooImage" alt="Happy poo">
+                <button type="button" class="btn" id="run" name="action">
+                  <img class="imagePoo" src="assets/img/shittyH.png"/>
                 </button>
               </div>
             </div>
@@ -92,13 +100,43 @@
             <div class="container-fluid">
 
               <!-- Store Title -->
-              <div class="row">
-                <p class="title">STORE/BONUS</p>
+              <div class="row rightTitleRow">
+                <p class="title">Bonus store:</p>
               </div>
 
               <!-- Store Menu -->
               <div class="row">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic dicta quasi mollitia at libero cumque iusto assumenda, nisi eius exercitationem culpa ad alias quibusdam sed fugit voluptatem! Modi, ipsam?</p>
+                  <h4>List of avaible boosts:</h4>
+                  <ul class="list-group d-flex justify-content-center">
+                      <li class="list-group-item">
+                          <div class="dropdown">
+                              <button class="boostMenu btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Speed Boosts:
+                              <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li class="dropdown-header">List of Speed Boosts;</li>
+                                <li>
+                                  <div class="action">
+                                    <a href="#" id="autoClick" class="btn">Auto-Click</a>
+                                  </div>
+                                </li>
+                                <li><a href="#" title="Lien 2">Lien 2</a></li>
+                                <li><a href="#" title="Lien 3">Lien 3</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" title="Lien 4">Lien 4</a></li>
+                                </ul>
+                          </div> 
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6>Auto-Click</h6>
+                            <span class="badge badge-primary badge-pill">10 €</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6>Other</h6>
+                              <span class="badge badge-primary badge-pill">12 €</span>
+                      </li>
+                  </ul>
 
                 <!-- n°1 Bonus Button -->
                 <div class="action">
@@ -145,6 +183,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 
 </div>
 </body>

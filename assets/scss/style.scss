@@ -1,12 +1,73 @@
-.row {
-    border: 3px blue solid;
+// # BODY CONTENT #
+body {
+    background-image: url("../img/background3.png");
 }
 
-.rowPadding {
-    padding: 2rem;
+// # FONT MANAGING #
+.title {
+    margin: 3rem;
+    text-align: center;
+    font-size: 25pt;
 }
-// MAIN BUTTON
-.btn {
+
+.text {
+    font-family: cursive;
+    margin: 2rem;
+}
+
+// # BOXES #
+.box {
+    background-color: rgba(0, 0, 0, 0.788);
+    border: 3px black solid;
+    color: whitesmoke; 
+}
+
+// ===========================================================//
+
+// # LEFT WINDOW #
+// Row n°1:
+.leftTitleRow {
+    background-image: url("../img/");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #000000;
+    width: 110%;
+    height: 100px;
+}
+
+// # CENTER WINDOWS #
+// Row n°1: Jumbotron
+.jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8rem;
+    width: 100%;
+    border: 3px solid #000000;
+    .jumbotronText {
+        background-color: rgba(0, 0, 0, 0.753);
+        border: 3px solid #883600;
+        border-radius: 10% / 90%;
+        color: whitesmoke;
+        font-size: 12pt;
+    }
+}
+
+// Row n°2: Poo Image
+.imagePoo {
+    background: transparent;
+    height: 220px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+.btnRun {
+    margin: 2rem;
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
@@ -55,4 +116,90 @@
         top: 0;
     }
 }
-  
+// Row n°3: Scoring div
+.scoring {
+    padding: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    border: 3px whitesmoke solid;
+    background-color: black;
+}
+
+// # RIGHT WINDOW #
+// Row n°1:
+.rightTitleRow {
+    background-image: url("../img/");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #000000;
+    width: 110%;
+    height: 110px;
+}
+
+//Row n°2:
+.boostMenu {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background-color: grey;
+    position: relative;
+    /*overflow: hidden;*/
+    transition: .3s;
+}
+
+.btn {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background-color: grey;
+    position: relative;
+    /*overflow: hidden;*/
+    transition: .3s;
+    :before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #009688;
+        opacity: .5;
+        top: 100;
+        left: 0;
+        z-index: -1;
+        transition: .3s;
+    }
+    :after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #009688;
+        top: 100;
+        left: 0;
+        z-index: -1;
+        transition: .3s;
+        transition-delay: .2s;
+    }
+    :hover {
+        color: #fff;
+    }
+    :hover:before {
+        top: 0;
+    }
+    :hover:after {
+        top: 0;
+    }
+}
