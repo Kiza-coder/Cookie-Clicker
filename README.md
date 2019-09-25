@@ -1,2 +1,51 @@
-# Cookie-Clicker
-[TEAM-PROJECT] - Create a cookie clicker with Html, Css and Javascript. Team: Arturo, Jeason, Kiza, Mathieu.
+# Cookie Clicker:
+<p align="center"> - [TEAM-PROJECT] - </p>
+
+<h3>Contributors:</h3>
+<ul>
+  <li>Arturo</li>
+  <li>Jeason</li>
+  <li>Kiza</li>
+  <li>Mathieu</li>
+</ul>
+
+
+<hr>
+
+<h2>Goals:</h2> 
+<p>Create a cookie clicker using Html, Css and Javascript.</p>
+
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+
+<hr>
+
+<h2>Methodology:</h2>
+<p></p>
+<ul>
+  <li>Front-End: </li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<hr>
+
+<h2>Resources used:</h2>
+
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<hr>
+
