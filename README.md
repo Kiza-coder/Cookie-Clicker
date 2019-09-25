@@ -1,6 +1,7 @@
 # Cookie Clicker:
 <p align="center"> - [TEAM-PROJECT] - </p>
 
+
 <h3>Contributors:</h3>
 <ul>
   <li>Arturo</li>
@@ -14,6 +15,12 @@
 
 <h2>Our main Goals were:</h2> 
 <p>To create a cookie clicker using Html, Css and Javascript.</p>
+<p>Our team decided to divert the Cookie-clicker building our own Poo-Clicker version</p>
+
+<p align="center">
+<img src="https://github.com/MathieuKruk/Cookie-Clicker/blob/master/assets/img/shittyH.png" height="50%" width="70%">
+</p>
+
 <p>Our team also worked on:</p>
 
 <ol>
