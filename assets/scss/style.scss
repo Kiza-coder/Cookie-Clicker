@@ -1,41 +1,11 @@
+// # BODY CONTENT #
 body {
     background-image: url("../img/background3.png");
 }
 
-.jumbotron {
-    background-image: url("../img/jumbotron.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 12rem;
-    width: 100%;
-    margin-bottom: 1px;
-    .text {
-        background-color: rgba(0, 0, 0, 0.753);
-        border: 3px solid whitesmoke;
-        border-radius: 10% / 90%;
-        color: whitesmoke;
-        padding: 0.5rem;
-    }
-}
-
-.box {
-    background-color: rgba(0, 0, 0, 0.788);
-    border: 3px black solid;
-    color: whitesmoke; 
-}
-
-.boxSpacing{
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-}
-
-.rowPadding {
-    padding: 2rem;
-}
-
+// # FONT MANAGING #
 .title {
-    margin: 2rem;
+    margin: 3rem;
     text-align: center;
     font-size: 25pt;
 }
@@ -45,8 +15,57 @@ body {
     margin: 2rem;
 }
 
+// # BOXES #
+.box {
+    background-color: rgba(0, 0, 0, 0.788);
+    border: 3px black solid;
+    color: whitesmoke; 
+}
 
-// MAIN BUTTON
+// ===========================================================//
+
+// # LEFT WINDOW #
+// Row n°1:
+.leftTitleRow {
+    background-image: url("../img/");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #000000;
+    width: 110%;
+    height: 100px;
+}
+
+// # CENTER WINDOWS #
+// Row n°1: Jumbotron
+.jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8rem;
+    width: 100%;
+    border: 3px solid #000000;
+    .jumbotronText {
+        background-color: rgba(0, 0, 0, 0.753);
+        border: 3px solid #883600;
+        border-radius: 10% / 90%;
+        color: whitesmoke;
+        font-size: 12pt;
+    }
+}
+
+// Row n°2: Poo Image
+.imagePoo {
+    background: transparent;
+    height: 220px;
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
 .btnRun {
     margin: 2rem;
     font-family: arial;
@@ -97,7 +116,44 @@ body {
         top: 0;
     }
 }
-// BONUS BUTTONS
+// Row n°3: Scoring div
+.scoring {
+    padding: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    border: 3px whitesmoke solid;
+    background-color: black;
+}
+
+// # RIGHT WINDOW #
+// Row n°1:
+.rightTitleRow {
+    background-image: url("../img/");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #000000;
+    width: 110%;
+    height: 110px;
+}
+
+//Row n°2:
+.boostMenu {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background-color: grey;
+    position: relative;
+    /*overflow: hidden;*/
+    transition: .3s;
+}
 
 .btn {
     font-family: arial;
@@ -105,7 +161,6 @@ body {
     font-size: 30px;
     width: 240px;
     height: 60px;
-    border-radius: 80px;
     line-height: 60px;
     text-align: center;
     border: 3px solid #ffffff;
@@ -147,19 +202,4 @@ body {
     :hover:after {
         top: 0;
     }
-}
-
-// SCORING DIV
-
-.scoring {
-    padding: 2rem;
-    margin: 2rem;
-    border: 3px whitesmoke solid;
-    background-color: black;
-}
-
-// IMAGE BUTTON
-
-#pooImage {
-    margin: 2rem;
 }
