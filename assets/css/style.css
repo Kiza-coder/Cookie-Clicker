@@ -1,9 +1,13 @@
 body {
-  background-image: url("../img/background3.png");
+  background-image: url("../img/background2.png");
 }
 
 .title {
-  margin: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   font-size: 25pt;
 }
@@ -19,18 +23,22 @@ body {
   color: whitesmoke;
 }
 
+.rowMain {
+  margin-top: 1rem;
+}
+
 .leftTitleRow {
-  background-image: url("../img/");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid #000000;
+  background-image: url("../img/titleBg.png");
+  border: 3px solid #ffffff;
   width: 110%;
   height: 100px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .jumbotron {
-  background-image: url("../img/jumbotron.jpg");
+  background-image: url("../img/jumbotron.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,16 +48,16 @@ body {
 }
 
 .jumbotron .jumbotronText {
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: black;
   border: 3px solid #883600;
   border-radius: 10% / 90%;
-  color: whitesmoke;
+  color: #ff9100;
   font-size: 12pt;
 }
 
 .imagePoo {
   background: transparent;
-  height: 220px;
+  height: 300px;
   width: 240px;
   display: block;
   margin-left: auto;
@@ -122,16 +130,18 @@ body {
   margin: 2rem 2rem 2rem 2rem;
   border: 3px whitesmoke solid;
   background-color: black;
+  width: 13rem;
+  text-align: center;
 }
 
 .rightTitleRow {
-  background-image: url("../img/");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid #000000;
+  background-image: url("../img/titleBg.png");
+  border: 3px solid #ffffff;
   width: 110%;
-  height: 110px;
+  height: 100px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .boostMenu {
@@ -157,16 +167,28 @@ body {
   font-family: arial;
   text-transform: uppercase;
   font-size: 30px;
-  width: 240px;
-  height: 60px;
-  line-height: 60px;
   text-align: center;
   border: 3px solid #ffffff;
-  display: block;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
   text-decoration: none;
   color: #000000;
-  background-color: grey;
+  background-color: transparent;
   position: relative;
+  height: 120px;
+  width: 20px;
   /*overflow: hidden;*/
   -webkit-transition: .3s;
   transition: .3s;
@@ -209,9 +231,5 @@ body {
 
 .btn :hover:after {
   top: 0;
-}
-
-#pooImage {
-  margin: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
