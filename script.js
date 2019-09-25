@@ -75,16 +75,17 @@ function check()
 	,100)
 
 }
-function bonus()
-{
-	let valActuel = parseInt(myStock.getItem("valClick"))
-	let valBonus = valActuel * 2;
-
-	parseInt(myStock.setItem("valClick", valBonus));
-	setTimeout(function(){},5000);
-	parseInt(myStock.setItem("valClick",valActuel ));
+//function bonus()
+//{
+//	
+//	let bonus = parseInt(myStock.getItem("valClick"));
+//	bonus = bonus * 2
+//	target.innerHTML = parseInt(myStock.getItem("score")) + bonus
+//	setTimeout(function(){},10000);
+//	myStock.setItem("valClick",myStock.getItem("valClick") / 2);
+//	console.log(myStock.getItem("valClick"))
 	
-}
+//}
 
 
 
