@@ -23,7 +23,7 @@ function incrementOne(){
 		myStock.setItem("score",score);
 
 }
-
+changeTitle();
 
 //function who multiplcate the score
 function multiplication()
@@ -111,9 +111,10 @@ const gallery=[
 let i = 0;
 document.getElementById("run").addEventListener("click",() =>{
 	incrementOne()
-			i++
+		
+			i++;
 			document.querySelector("img").setAttribute("src", gallery[i%gallery.length]);
-			i=0
+
 	});
 
 document.getElementById("multiply").addEventListener("click",() =>{
