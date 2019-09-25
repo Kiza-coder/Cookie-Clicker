@@ -5,8 +5,8 @@ tabIdButtonAchat= ["autoClick","multiply"]
 
 myStock.setItem("score",0);
 myStock.setItem("valClick",1);
-myStock.setItem("0",100);
-myStock.setItem("1",300);
+myStock.setItem("0",20);// autoClick
+myStock.setItem("1",300);// Multi
 
 
 
@@ -15,7 +15,7 @@ function incrementOne(){
 		let score = parseInt(myStock.getItem("score"))
 		let valClick = parseInt(myStock.getItem("valClick"));
 		score = score + valClick;
-		console.log(score)	
+		
 		target.innerHTML = score;
 		myStock.setItem("score",score);
 
@@ -26,14 +26,14 @@ function incrementOne(){
 function multiplication()
 	{
 		myStock.setItem("valClick",myStock.getItem("valClick")*2);
-		buy(10);
+		buy(myStock.getItem("1"))
 	}
 
 
 //function who automatically increment the score of "num" every 1000 ms
 function autoClick()
 	{
-		buy(10)
+		buy(myStock.getItem("0"))
 		setInterval(function(){
 			let score = parseInt(myStock.getItem("score"));
 			let valClick = parseInt(myStock.getItem("valClick"));
@@ -64,10 +64,31 @@ function check()
 			{
 				document.getElementById(tabIdButtonAchat[i]).setAttribute("class","btn")
 			}
+			let score = parseInt(myStock.getItem("score"));
+			setTimeout(function(){
+		 		let res = parseInt(myStock.getItem("score")) - score;
+		 		perSecond.innerHTML = res;
+			},1000);
+		
 		}
 	}
-		,10)
+		,100)
 }
+
+
+function shittyBysecond()
+{
+	let score = parseInt(myStock.getItem("score"));
+	setTimeout(function(){
+		 res = parseInt(myStock.getItem("score"));
+	},5000);
+	return res-score;
+}
+
+
+
+
+
 
 check();
 
