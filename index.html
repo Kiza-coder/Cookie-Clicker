@@ -26,6 +26,9 @@
   <!-- TITLE -->
   <title>
     Poo Clicker
+      <div id="target">
+                  
+      </div>
   </title>
 
 </head>
@@ -43,7 +46,7 @@
   <!-- MAIN -->
   <section>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row rowMain">
 
         <!-- LEFT WINDOW" -->
         <div class="col-3 box">
@@ -72,7 +75,7 @@
 
           <!-- Image-button -->
           <div class="container-fluid">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
               <div class="action">
                 <button type="button" class="btn" id="run" name="action">
                   <img class="imagePoo" src="assets/img/shittyH.png"/>
@@ -85,9 +88,10 @@
           <div class="container-fluid">
             <div class="row d-flex justify-content-center">
               <div class="scoring">
-                SCORE:
+                YOUR SCORE!
                   <div id="target">
-                  
+                      
+                      \ (•◡•) /
                   </div>
               </div>
             </div>
@@ -105,9 +109,12 @@
               </div>
 
               <!-- Store Menu -->
-              <div class="row">
-                  <h4>List of avaible boosts:</h4>
-                  <ul class="list-group d-flex justify-content-center">
+              <div class="row d-flex justify-content-center">
+                  <p class="text">List of avaible boosts:</p>
+
+                  <ul class="list-group">
+
+                      <!-- Speed Boosts-->
                       <li class="list-group-item">
                           <div class="dropdown">
                               <button class="boostMenu btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -116,18 +123,41 @@
                               </button>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                               <li class="dropdown-header">List of Speed Boosts;</li>
+
+                                <!-- Auto-Click Button -->
                                 <li>
                                   <div class="action">
                                     <a href="#" id="autoClick" class="btn">Auto-Click</a>
                                   </div>
                                 </li>
-                                <li><a href="#" title="Lien 2">Lien 2</a></li>
-                                <li><a href="#" title="Lien 3">Lien 3</a></li>
+
+                                <!-- Multiply Button -->
+                                <li>
+                                  <div class="action">
+                                    <a href="#" id="multiply" class="btn">Mutliply</a>
+                                  </div>
+                                </li>
+
+                                <!--  Button -->
+                                <li>
+                                  <div class="action">
+                                    <a href="#" id="multiply" class="btn">Button</a>
+                                  </div>
+                                </li>
+
+                                <!--  Separator -->
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#" title="Lien 4">Lien 4</a></li>
+
+                                <!--  Button -->
+                                <li>
+                                    <div class="action">
+                                      <a href="#" id="multiply" class="btn">Button</a>
+                                    </div>
+                                  </li>
                                 </ul>
                           </div> 
                       </li>
+
                       <li class="list-group-item d-flex justify-content-between align-items-center">
                           <h6>Auto-Click</h6>
                             <span class="badge badge-primary badge-pill">10 €</span>
@@ -137,23 +167,7 @@
                               <span class="badge badge-primary badge-pill">12 €</span>
                       </li>
                   </ul>
-
-                <!-- n°1 Bonus Button -->
-                <div class="action">
-                  <a href="#" id="autoClick" class="btn">Auto-Click</a>
                 </div>
-
-                <!-- n°2 Bonus Button -->
-                <div class="action">
-                  <a href="#" id="multiply" class="btn">Mutliply</a>
-                </div>
-
-                <!-- n°3 Bonus Button -->
-                <div class="action">
-                  <a href="#" id="button3" class="btn">Button 3</a>
-                </div>
-
-              </div>
             </div>
           </div>
           
