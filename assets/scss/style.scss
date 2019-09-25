@@ -1,12 +1,54 @@
-.row {
-    border: 3px blue solid;
+body {
+    background-image: url("../img/background3.png");
+}
+
+.jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 12rem;
+    width: 100%;
+    margin-bottom: 1px;
+    .text {
+        background-color: rgba(0, 0, 0, 0.753);
+        border: 3px solid whitesmoke;
+        border-radius: 10% / 90%;
+        color: whitesmoke;
+        padding: 0.5rem;
+    }
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.788);
+    border: 3px black solid;
+    color: whitesmoke; 
+}
+
+.boxSpacing{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
 }
 
 .rowPadding {
     padding: 2rem;
 }
+
+.title {
+    margin: 2rem;
+    text-align: center;
+    font-size: 25pt;
+}
+
+.text {
+    font-family: cursive;
+    margin: 2rem;
+}
+
+
 // MAIN BUTTON
-.btn {
+.btnRun {
+    margin: 2rem;
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
@@ -55,4 +97,69 @@
         top: 0;
     }
 }
-  
+// BONUS BUTTONS
+
+.btn {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background-color: grey;
+    position: relative;
+    /*overflow: hidden;*/
+    transition: .3s;
+    :before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #009688;
+        opacity: .5;
+        top: 100;
+        left: 0;
+        z-index: -1;
+        transition: .3s;
+    }
+    :after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #009688;
+        top: 100;
+        left: 0;
+        z-index: -1;
+        transition: .3s;
+        transition-delay: .2s;
+    }
+    :hover {
+        color: #fff;
+    }
+    :hover:before {
+        top: 0;
+    }
+    :hover:after {
+        top: 0;
+    }
+}
+
+// SCORING DIV
+
+.scoring {
+    padding: 2rem;
+    margin: 2rem;
+    border: 3px whitesmoke solid;
+    background-color: black;
+}
+
+// IMAGE BUTTON
+
+#pooImage {
+    margin: 2rem;
+}
