@@ -1,5 +1,5 @@
 // Local  storage array with global variabl (key,value)
-let myStock = localStorage;
+let myStock = sessionStorage;
 let tabIdButtonAchat= new Array();
 tabIdButtonAchat= ["autoClick","multiply"]
 
@@ -8,8 +8,11 @@ myStock.setItem("valClick",1);
 myStock.setItem("0",20);// autoClick
 myStock.setItem("1",300);// Multi
 
-
-
+//Function who change the title
+function changeTitle()
+{
+	document.getElementsByTagName("title")[0].innerHTML= myStock.getItem("score")+"   shitty"
+}
 //function who increment  the score of one
 function incrementOne(){
 		let score = parseInt(myStock.getItem("score"))
@@ -20,7 +23,7 @@ function incrementOne(){
 		myStock.setItem("score",score);
 
 }
-
+changeTitle();
 
 //function who multiplcate the score
 function multiplication()
@@ -51,6 +54,7 @@ function buy(num)
 		target.innerHTML = myStock.getItem("score")
 	}
 
+
 function check()
 {
 	setInterval(function(){
@@ -64,25 +68,38 @@ function check()
 			{
 				document.getElementById(tabIdButtonAchat[i]).setAttribute("class","btn")
 			}
-			let score = parseInt(myStock.getItem("score"));
-			setTimeout(function(){
-		 		let res = parseInt(myStock.getItem("score")) - score;
-		 		perSecond.innerHTML = res;
-			},1000);
 		
 		}
+		changeTitle();
 	}
-		,100)
+	,100)
+
+}
+function bonus()
+{
+	let valActuel = parseInt(myStock.getItem("valClick"))
+	let valBonus = valActuel * 2;
+
+	parseInt(myStock.setItem("valClick", valBonus);
+	setTimeout(function(){},5000);
+	parseInt(myStock.setItem("valClick",valActuel );
+	
 }
 
 
-function shittyBysecond()
+
+
+
+function shittyBySecond()
 {
-	let score = parseInt(myStock.getItem("score"));
-	setTimeout(function(){
-		 res = parseInt(myStock.getItem("score"));
-	},5000);
-	return res-score;
+	let score = parseInt(myStock.getItem("score"))
+	setInterval(function(){
+		 let res = parseInt(myStock.getItem("score")) - score;
+		 score = parseInt(myStock.getItem("score"));
+		 if(res>0){
+		 	 console.log(res)
+		 }
+	},1000);
 }
 
 
@@ -91,6 +108,7 @@ function shittyBysecond()
 
 
 check();
+shittyBySecond();
 
 
 
@@ -116,6 +134,11 @@ document.getElementById("multiply").addEventListener("click",() =>{
 document.getElementById("autoClick").addEventListener("click",() =>{
 	autoClick();
 	});
+
+document.getElementById("Bonus").addEventListener("click",() =>{
+	bonus();
+	});
+
 
 
 
