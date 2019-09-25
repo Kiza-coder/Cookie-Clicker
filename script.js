@@ -11,7 +11,7 @@ myStock.setItem("1",300);// Multi
 //Function who change the title
 function changeTitle()
 {
-	document.getElementsByTagName("title")[0].innerHTML= myStock.getItem("score")+"   shitty"
+	document.getElementsByTagName("title")[0].innerHTML= myStock.getItem("score")+"   shit"
 }
 //function who increment  the score of one
 function incrementOne(){
@@ -102,9 +102,17 @@ function shittyBySecond()
 	},1000);
 }
 
+//function cow(){
+//	setInterval(function(){
 
+//			let cow = parseInt(myStock.getItem("valClick"));
+//			cow = cow * 5
+//			cow = cow + parseInt(myStock.getItem("score"));
+//			target.innerHTML = cow;
 
-
+	
+//	},1);
+//}
 
 
 check();
@@ -138,6 +146,12 @@ document.getElementById("autoClick").addEventListener("click",() =>{
 document.getElementById("bonus").addEventListener("click",() =>{
 	bonus();
 	});
+
+//document.getElementById("cow").addEventListener("click",() =>{
+//	cow();
+//	});
+
+
 
 
 
