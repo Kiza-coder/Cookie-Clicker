@@ -196,7 +196,7 @@ body {
     display: block;
     text-decoration: none;
     color: #000000;
-    background-color: grey;
+    background-color: rgb(122, 59, 0);
     position: relative;
     /*overflow: hidden;*/
     transition: .3s;
@@ -274,8 +274,4 @@ body {
 .dropdown-header {
     background-image: url("../img/titleBg.png");
     text-align: center;
-}
-
-.cow {
-    background-image: url("../img/cow.png")
 }
