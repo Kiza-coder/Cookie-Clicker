@@ -1,7 +1,12 @@
 // Local  storage array with global variabl (key,value)
 let myStock = localStorage;
+let tabIdButtonAchat= new Array();
+tabIdButtonAchat= ["autoClick","multiply"]
+
 myStock.setItem("score",0);
 myStock.setItem("valClick",1);
+myStock.setItem("0",100);
+myStock.setItem("1",300);
 
 
 
@@ -46,16 +51,27 @@ function buy(num)
 		target.innerHTML = myStock.getItem("score")
 	}
 
+function check()
+{
+	setInterval(function(){
+		for(let i=0 ; i< tabIdButtonAchat.length ;i++)
+		{
+			if(parseInt(myStock.getItem(i)) > parseInt(myStock.getItem("score")))
+			{
+				document.getElementById(tabIdButtonAchat[i]).setAttribute("class","btn btn-link disabled")
+			}
+			else
+			{
+				document.getElementById(tabIdButtonAchat[i]).setAttribute("class","btn")
+			}
+		}
+	}
+		,10)
+}
 
-//function main()
-//	{
-//		setInterval(function(){
-//			document.getElementById("mult").disable = true;
-//			console.log(1151);
-//		},1000);
-//	}	
+check();
 
- 
+
 
 const gallery=[
 	"assets/img/shittyH.png",
