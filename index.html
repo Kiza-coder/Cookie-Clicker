@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
 
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="assets/img/icon.png"/>
+  <link rel="icon" type="image/png" href="assets/img/poo.png"/>
 
   <!-- TITLE -->
   <title>
@@ -88,12 +88,14 @@
           <div class="container-fluid">
             <div class="row d-flex justify-content-center">
               <div class="action">
-                <button type="button" class="btnPoo" id="run" name="action">
+                <a type="button" class="btnPoo" id="run" name="action">
                   <img class="imagePoo" src="assets/img/shittyH.png"/>
-                </button>
+                </a>
               </div>
             </div>
           </div>
+
+          
 
           <!-- Scoring -->
           <div class="container-fluid">
@@ -128,11 +130,12 @@
 
                   <ul class="list-group">
 
-                      <!-- Speed Boosts-->
+                      
                       <li class="list-group-item">
+                        <!-- Speed Boosts-->
                           <div class="dropdown">
                               <button class="boostMenu btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                🕒 Speed Boosts 
+                                🔥 Boosts 
                               <span class="caret"></span>
                               </button>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -140,27 +143,63 @@
 
                                 <!-- Auto-Click Button -->
                                 <li>
-                                  <div class="action">
-                                    <a href="#" id="autoClick" class="BoostsBtn">Auto-Click</a>
+                                  <div class="action BoostsBtn">
+                                    <a href="#" id="autoClick" class="">Auto-Click</a>
                                   </div>
                                 </li>
 
                                 <!-- Multiply Button -->
                                 <li>
-                                  <div class="action">
-                                    <a href="#" id="multiply" class="BoostsBtn">Mutliply</a>
+                                  <div class="action BoostsBtn">
+                                    <a href="#" id="multiply" class="">Multiply</a>
                                   </div>
                                 </li>
 
                                 <!--  Bonus Button -->
                                 <li>
-                                  <div class="action">
-                                    <a href="#" id="bonus" class="BoostsBtn">Bonus</a>
+                                  <div class="action BoostsBtn">
+                                    <a href="#" id="bonus" class="">Bonus</a>
                                   </div>
                                 </li>
 
+
                               </ul>
                           </div> 
+
+                          <!-- REINFORCMENT -->
+                          <div class="dropdown">
+                            <button class="boostMenu btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              🚻 REINFORCMENT 
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li class="dropdown-header">Hurry up!!!</li>
+
+                              <!-- Cow Button -->
+                              <li>
+                                <div class="action BoostsBtn">
+                                  <a href="#" id="cow" class="">🐄 Cow</a>
+                                </div>
+                              </li>
+
+                              <!-- Button -->
+                              <li>
+                                <div class="action BoostsBtn">
+                                  <a href="#" id="multiply" class=""></a>
+                                </div>
+                              </li>
+
+                              <!-- Button -->
+                              <li>
+                                <div class="action BoostsBtn">
+                                  <a href="#" id="bonus" class=""></a>
+                                </div>
+                              </li>
+
+
+                            </ul>
+                        </div> 
+
                       </li>
                   </ul>
                 </div>
