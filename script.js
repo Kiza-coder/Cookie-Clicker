@@ -47,14 +47,14 @@ function buy(num)
 	}
 
 
-function main()
-	{
-		setInterval(function(){
-			document.getElementById("mult").disable = true;
-			console.log(1151);
-		},1000);
-	}	
-main()
+//function main()
+//	{
+//		setInterval(function(){
+//			document.getElementById("mult").disable = true;
+//			console.log(1151);
+//		},1000);
+//	}	
+
  
 
 const gallery=[
@@ -66,17 +66,17 @@ const gallery=[
 
 document.getElementById("run").addEventListener("click",() =>{
 	incrementOne()
-		let i = 0;
-			i++;
-			document.querySelector("img").setAttribute("src", gallery[i%gallery.length]);
+		//let i = 0;
+		//	i++;
+		//	document.querySelector("img").setAttribute("src", gallery[i%gallery.length]);
 
 	});
 
-document.getElementById("mult").addEventListener("click",() =>{
+document.getElementById("multiply").addEventListener("click",() =>{
 	multiplication()
 	});
 
-document.getElementById("autoclick").addEventListener("click",() =>{
+document.getElementById("autoClick").addEventListener("click",() =>{
 	autoClick();
 	});
 
