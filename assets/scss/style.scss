@@ -1,11 +1,15 @@
 // # BODY CONTENT #
 body {
-    background-image: url("../img/background3.png");
+    background-image: url("../img/background2.png");
 }
 
 // # FONT MANAGING #
 .title {
-    margin: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-size: 25pt;
 }
@@ -22,24 +26,29 @@ body {
     color: whitesmoke; 
 }
 
+// # ROWS #
+.rowMain {
+    margin-top: 1rem;
+}
+
 // ===========================================================//
 
 // # LEFT WINDOW #
 // Row n°1:
 .leftTitleRow {
-    background-image: url("../img/");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #000000;
+    background-image: url("../img/titleBg.png");
+    border: 3px solid #ffffff;
     width: 110%;
     height: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 // # CENTER WINDOWS #
 // Row n°1: Jumbotron
 .jumbotron {
-    background-image: url("../img/jumbotron.jpg");
+    background-image: url("../img/jumbotron.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,10 +56,10 @@ body {
     width: 100%;
     border: 3px solid #000000;
     .jumbotronText {
-        background-color: rgba(0, 0, 0, 0.753);
+        background-color: rgb(0, 0, 0);
         border: 3px solid #883600;
         border-radius: 10% / 90%;
-        color: whitesmoke;
+        color: rgb(255, 145, 0);
         font-size: 12pt;
     }
 }
@@ -58,7 +67,7 @@ body {
 // Row n°2: Poo Image
 .imagePoo {
     background: transparent;
-    height: 220px;
+    height: 300px;
     width: 240px;
     display: block;
     margin-left: auto;
@@ -122,18 +131,20 @@ body {
     margin: 2rem 2rem 2rem 2rem;
     border: 3px whitesmoke solid;
     background-color: black;
+    width: 13rem;
+    text-align: center;
 }
 
 // # RIGHT WINDOW #
 // Row n°1:
 .rightTitleRow {
-    background-image: url("../img/");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #000000;
+    background-image: url("../img/titleBg.png");
+    border: 3px solid #ffffff;
     width: 110%;
-    height: 110px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 //Row n°2:
@@ -159,16 +170,22 @@ body {
     font-family: arial;
     text-transform: uppercase;
     font-size: 30px;
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
     text-align: center;
     border: 3px solid #ffffff;
-    display: block;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
     text-decoration: none;
     color: #000000;
-    background-color: grey;
+    background-color: transparent;
     position: relative;
+    height: 120px;
+    width: 20px;
     /*overflow: hidden;*/
     transition: .3s;
     :before {
