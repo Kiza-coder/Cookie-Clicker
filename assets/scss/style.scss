@@ -5,6 +5,7 @@ body {
 
 // # FONT MANAGING #
 .title {
+    font-family: 'Luckiest Guy', cursive;
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
@@ -15,8 +16,12 @@ body {
 }
 
 .text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #000000;
+    border-radius: 10%;
     margin: 2rem;
+    padding: 1rem;
+    border: 8px whitesmoke solid;
 }
 
 // # BOXES #
@@ -38,6 +43,7 @@ body {
 .leftTitleRow {
     background-image: url("../img/titleBg.png");
     border: 3px solid #883412;
+    border-radius: 5%;
     width: 110%;
     height: 100px;
     margin-top: 1rem;
@@ -46,8 +52,25 @@ body {
 }
 
 // # CENTER WINDOWS #
+
+.grass {
+    background-image: url(../img/grass.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.poo {
+    background-image: url(../img/poo.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 6rem;
+}
+
 // Row n°1: Jumbotron
 .jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../img/jumbotron.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -56,11 +79,11 @@ body {
     width: 100%;
     border: 3px solid #000000;
     .jumbotronText {
-        background-color: rgb(0, 0, 0);
-        border: 3px solid #883600;
-        border-radius: 10% / 90%;
-        color: rgb(255, 145, 0);
-        font-size: 12pt;
+        font-family: 'Barriecito', cursive;
+        color: rgb(0, 0, 0);
+        font-size: 60pt;
+        padding: 1rem;
+        font-weight: bolder;
     }
 }
 
@@ -94,6 +117,8 @@ body {
     position: relative;
     height: 120px;
     width: 20px;
+    transform: scale(1);
+    transition: transform 200ms;
     :before {
         content: '';
         width: 100%;
@@ -118,6 +143,7 @@ body {
     }
     :hover {
         color: #fff;
+        transform: scale(1.15);
     }
     :hover:before {
         top: 0;
@@ -144,6 +170,7 @@ body {
 .rightTitleRow {
     background-image: url("../img/titleBg.png");
     border: 3px solid #883412;
+    border-radius: 5%;
     width: 110%;
     height: 100px;
     margin-top: 1rem;
@@ -180,31 +207,71 @@ body {
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
-    border: 3px solid #000000;
-    border-radius: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     text-decoration: none;
     font-weight: bolder;
-    color: #ffffff;
-    background-image: url("../img/boostsBtnBg.png");
+    color: #000000;
+    background-image: url("../img/pipe.png");
+    background-size: cover;
+    background-position: center;
     position: relative;
     padding: 0.5rem;
+    transform: scale(1);
+    transition: transform 200ms;
+    height: 130px;
+    width: 300px;
+    :before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #009688;
+        opacity: .5;
+        top: 100;
+        left: 0;
+        z-index: -1;
+        transition: .3s;
+    }
+    :after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #009688;
+        top: 100;
+        left: 0;
+        z-index: -1;
+        transition: .3s;
+        transition-delay: .2s;
+    }
     :hover {
+        color: #fff;
+        transform: scale(1.15);
+        text-decoration: none;
+    }
+    :hover:before {
+        top: 0;
+        text-decoration: none;
+    }
+    :hover:after {
+        top:0;
         text-decoration: none;
     }
 }
 
 .dropdown-menu {
     padding: 0.5rem;
-    background-image: url("../img/boostsMenuBg.png");
+    background-image: url("../img/toilet.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 2rem;
+    border: solid 3px black;
+    border-radius: 5%;
 }
 
 .dropdown-header {
     background-image: url("../img/titleBg.png");
+    text-align: center;
 }
