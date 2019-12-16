@@ -137,14 +137,6 @@ Logs
 
 ## ◾ Screenshots
 
-### Api architecture
-<p align="center">
-  <img src="apiArchitecture.jpg">
-</p>
-<br>
-<hr>
-<br>
-
 ## ◾ Tech/framework used
 
 1. Front-end
@@ -153,12 +145,6 @@ Logs
    
 2. Back-end
    - [JavaScript](https://www.javascript.com/)
-
-<br>
-<hr>
-<br>
-
-## ◾ API Reference
 
 <br>
 <hr>
