@@ -1,4 +1,4 @@
-# Cookie Clicker:
+# Cookie Clicker 🍪
 
 ℹ️ Development started on 02/12/2019.
 
