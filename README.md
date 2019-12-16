@@ -1,5 +1,10 @@
 # Cookie Clicker 🍪
 
+<ul>
+  <li>Cookie Clicker is a mouse-clicking game playable on internet navigators.</li>
+  <li>A private joke led us develop a javascript game around a little poo.</li>
+</ul>
+
 ℹ️ Development started on 02/12/2019.
 
 <p align="center">
