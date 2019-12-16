@@ -135,6 +135,7 @@ Logs
 
 1. Front-end
    - [HTML](https://www.w3.org/html/)
+   - [SASS](https://sass-lang.com/)
    - [Bootstrap](https://getbootstrap.com/)
    
 2. Back-end
