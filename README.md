@@ -150,13 +150,11 @@ Logs
 ## ◾ Tech/framework used
 
 1. Front-end
-   - [Vue.js](https://vuejs.org/)
+   - [HTML](https://www.w3.org/html/)
    - [Bootstrap](https://getbootstrap.com/)
    
 2. Back-end
-   - [Node.js](https://nodejs.org/en/)
-     - [Express.js](https://expressjs.com/)
-     - [Socket.io](https://socket.io/)
+   - [JavaScript](https://www.javascript.com/)
 
 <br>
 <hr>
@@ -171,8 +169,8 @@ Logs
 ## ◾ Features
 
 <ul>
-  <li>Real-time Chatbox</li>
-  <li>Pre-organized channels</li>
+  <li>Cookie Clicker game</li>
+  <li>Different bonuses & combos</li>
   <li></li>
   <li></li>
 </ul>
