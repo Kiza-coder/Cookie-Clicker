@@ -1,23 +1,23 @@
 # Cookie Clicker 🍪
 
+## ◾ Features
+
 <ul>
   <li>Cookie Clicker is a mouse-clicking game playable on internet navigators.</li>
   <li>A private joke led us develop a javascript game around a little poo.</li>
 </ul>
 
-ℹ️ Development started on 02/12/2019.
+<hr>
 
 <p align="center">
   <img src="https://www.elsetge.cat/myimg/f/0-4798_rnk-shops-poop-emoji-wallpaper-surface-covering-poop.jpg">
 </p>
 
-<br>
 <hr>
-<br>
 
 ## ◾ Motivation
 
-It has been launch the 02/12/2019 in the case of a school project (<a href="https://github.com/becodeorg" target="_blank">BeCode</a>).
+It has been launch the 💠02/12/2019💠 in the case of a school project (<a href="https://github.com/becodeorg" target="_blank">BeCode</a>).
 
 Below, you will find our guidelines hosted on the school repo: 
 
@@ -106,9 +106,7 @@ JavaScript.
 
 ▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️▪️
 
-<br>
 <hr>
-<br>
 
 ## ◾ Tasks
 
@@ -118,9 +116,7 @@ JavaScript.
 
 ℹ️ For further informations, please make sure to visit our **Trello** [board](https://trello.com/b/NSohfKPi/real-time-chat) (only in french).
 
-<br>
 <hr>
-<br>
 
 ## ◾ Build status
 
@@ -131,9 +127,7 @@ Logs
    - ...
    - ...
 
-<br>
 <hr>
-<br>
 
 ## ◾ Screenshots
 
@@ -146,22 +140,7 @@ Logs
 2. Back-end
    - [JavaScript](https://www.javascript.com/)
 
-<br>
 <hr>
-<br>
-
-## ◾ Features
-
-<ul>
-  <li>Cookie Clicker game</li>
-  <li>Different bonuses & combos</li>
-  <li></li>
-  <li></li>
-</ul>
-
-<br>
-<hr>
-<br>
 
 ## ◾ Code Example
 
@@ -170,9 +149,8 @@ function test() {
   console.log("This is a test for code input?");
 }
 ```
-<br>
+
 <hr>
-<br>
 
 ## ◾ Credits
 Team
@@ -181,16 +159,12 @@ Team
    - [Kiza](https://github.com/Kiza-coder)
    - [Mathieu Kruk](https://github.com/MathieuKruk)
 
-<br>
 <hr>
-<br>
 
 ## ◾ License
 
 OpenSource | Free
 
-<br>
 <hr>
-<br>
 
 ✍️ Readme Author: Mathieu Kruk 
