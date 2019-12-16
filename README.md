@@ -1,11 +1,5 @@
 # Cookie Clicker:
 
-<ul>
-  <li>We proceeded in two main groups:</li>
-  <li>Front-end: which builded the basis HTML and CSS</li>
-  <li>Back-end: which worked-out the JS interactions</li>
-</ul>
-
 ℹ️ Development started on 02/12/2019.
 
 <p align="center">
